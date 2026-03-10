@@ -1,0 +1,18 @@
+[Unit]
+Description=Agent Dashboard Service
+After=network.target
+
+[Service]
+Type=simple
+User=your-user
+WorkingDirectory=/opt/agent-dashboard
+ExecStart=/usr/bin/node /opt/agent-dashboard/server.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=agent-dashboard
+
+[Install]
+WantedBy=multi-user.target

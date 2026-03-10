@@ -1,0 +1,10 @@
+{
+  "port": 5858,
+  "token": "",
+  "basicUser": "admin",
+  "basicPass": "changeme",
+  "siteTitle": "Agent Dashboard",
+  "siteUrl": "http://localhost:5858",
+  "ttlCleanupIntervalMs": 60000,
+  "cookieSecret": ""
+}
