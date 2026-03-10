@@ -393,12 +393,12 @@ app.post('/api/pages/:slug', authMiddleware, (req, res) => {
 });
 
 // ── API: JSON list ────────────────────────────────────────────────────────────
-app.get('/api/pages', (req, res) => {
+app.get('/api/pages', authMiddleware, (req, res) => {
   res.json(stmts.list.all());
 });
 
 // ── API: JSON single page ─────────────────────────────────────────────────────
-app.get('/api/pages/:slug', (req, res) => {
+app.get('/api/pages/:slug', authMiddleware, (req, res) => {
   const page = stmts.get.get(req.params.slug);
   if (!page) return res.status(404).json({ error: 'Not found' });
   res.json(page);

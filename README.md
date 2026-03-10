@@ -127,8 +127,7 @@ All browser views auto-refresh via SSE when content changes.
 
 ## Auth
 
-- **API writes** (POST, PATCH, DELETE) require `Authorization: Bearer <token>`
-- **API reads** (GET) are public — no auth needed
+- **All API routes** (GET, POST, PATCH, DELETE) require `Authorization: Bearer <token>`
 - **Browser views** require cookie-based login, **except** from local network IPs (192.168.x.x, 10.x.x.x, 172.16-31.x.x, localhost) which bypass login automatically
 
 ## Deploy as a Service
