@@ -4,7 +4,9 @@ A lightweight web dashboard for AI agents to push rich HTML and markdown content
 
 Built for [OpenClaw](https://github.com/openclaw/openclaw) but works with any agent framework — it's just a REST API.
 
-![Agent Dashboard screenshot](screenshot.jpg)
+![Agent Dashboard — index view](screenshot.jpg)
+
+![Agent Dashboard — page view](screenshot-page.jpg)
 
 ## Features
 
