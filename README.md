@@ -34,6 +34,28 @@ npm start
 
 Open `http://localhost:5858` in your browser.
 
+### Use with an AI agent
+
+Once running, your agent can push content via the API. Just tell it:
+
+> "Push this report to the dashboard"
+
+Or include the `skill/` directory in your agent's workspace and it'll know how to use the push script automatically. For [OpenClaw](https://github.com/openclaw/openclaw), copy `skill/` to your skills directory and set the env vars:
+
+```bash
+export DASHBOARD_URL="http://localhost:5858"
+export DASHBOARD_TOKEN="your-token-from-config"
+```
+
+Any agent framework that can make HTTP requests works — it's just a REST API:
+
+```bash
+curl -X POST http://localhost:5858/api/pages/hello \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"title": "Hello World", "body": "<h1>It works!</h1>"}'
+```
+
 ## Configuration
 
 Copy `config.example.json` to `config.json` and customize:
