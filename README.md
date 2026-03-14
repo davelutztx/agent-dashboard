@@ -1,6 +1,6 @@
 # Agent Dashboard
 
-A lightweight web dashboard for AI agents to push rich HTML and markdown content to. Features real-time browser updates via SSE, dark mode UI, content management with TTL/pinning/categories/tags, and cookie-based auth.
+A lightweight web dashboard for AI agents to push rich HTML and markdown content to. Features real-time browser updates via SSE, dark/light mode toggle, content management with TTL/pinning/categories/tags, and cookie-based auth.
 
 Built for [OpenClaw](https://github.com/openclaw/openclaw) but works with any agent framework — it's just a REST API.
 

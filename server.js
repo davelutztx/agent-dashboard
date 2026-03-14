@@ -224,11 +224,28 @@ ${extraHead}
     <a href="/pinned">📌 Pinned</a>
     <a href="/logout">Logout</a>
   </nav>
+  <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode">🌙</button>
+  </nav>
 </header>
 <main>
 ${body}
 </main>
 <footer><small>powered by dashboard-service</small></footer>
+<script>
+(function() {
+  const btn = document.getElementById('themeToggle');
+  const body = document.body;
+  const saved = localStorage.getItem('dashTheme') || 'dark';
+  body.className = saved;
+  btn.textContent = saved === 'dark' ? '🌙' : '☀️';
+  btn.addEventListener('click', function() {
+    const next = body.classList.contains('dark') ? 'light' : 'dark';
+    body.className = next;
+    btn.textContent = next === 'dark' ? '🌙' : '☀️';
+    localStorage.setItem('dashTheme', next);
+  });
+})();
+</script>
 </body>
 </html>`;
 }
