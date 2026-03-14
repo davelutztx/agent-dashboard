@@ -19,7 +19,7 @@ Built for [OpenClaw](https://github.com/openclaw/openclaw) but works with any ag
 - **Filter by agent or category** — Multi-agent friendly
 - **Cookie-based auth** — Login required for external access, auto-bypass on local network
 - **SQLite storage** — Zero-config, single-file database
-- **Dark mode** — Easy on the eyes, mobile-responsive
+- **Toggle for Light / Dark mode** — Easy on the eyes, mobile-responsive
 
 ## Quick Start
 
