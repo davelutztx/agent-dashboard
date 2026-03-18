@@ -1,5 +1,5 @@
 ---
-name: dashboard
+name: agent-dashboard
 description: Push rich content to the Agent Dashboard. Use when output exceeds chat platform limits or when content is better viewed in a browser (reports, tables, HTML, markdown).
 user-invocable: true
 ---
